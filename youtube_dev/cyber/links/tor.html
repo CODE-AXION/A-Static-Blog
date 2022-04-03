@@ -1,0 +1,278 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog_layoutx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    
+      <div class="please">
+      
+        <div class="header">
+
+           
+          <div class="logo"><h1>CODE AXION</h1></div>
+          <nav class="navbar_container">
+          <div class="main_navbar">
+
+
+              <ul class="main_navbar_ul">
+
+
+                  <li class="navbar_level_1_li"><a class="navbar_level_1_links" href="#">Home</a></li>
+                  <li class="navbar_level_1_li"><a class="navbar_level_1_links" href="#">Academy</a></li>
+                  <!-- <li class="navbar_level_1_li"><a class="navbar_level_1_links" href="#"></a></li> -->
+                  <li class="navbar_level_1_li"><a class="navbar_level_1_links" href="#">About Me</a></li>
+                  <li class="navbar_level_1_li"><a class="navbar_level_1_links" href="#">Contacts</a></li>
+
+
+              </ul>
+
+          </div>
+      </nav>
+  </div>
+          <!-- <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br> -->
+        </div>
+
+
+
+          <div class="Container_posts">
+              <div class="posts">
+                    <h1>What is the Tor network? </h1>
+
+              </div>
+              <div class="over">
+              <img src="images/tor.jpg" class="all_flow">
+            </div>
+            <br>
+            <br>
+            <div class="para">
+              <h2 class="hightlight_boi">TOR NETWORKING
+              </h2>     
+            <br>
+            <br>
+            <br>
+            <br>
+                <p>
+                  Tor is a network solution for anonymizing communications on the internet. Tor’s technological approach is based on “onion routing,” in which communications on the internet are obfuscated via different and variable routes.
+            </p>     
+            <br>
+            <br>
+            <h2 class="subfields_style">A definition of Tor</h2>
+            <p>
+              The Tor network allows users to anonymously access content on the internet. The free technology is designed for TCP connections and allows the anonymous use of web browsers, instant messaging, IRC, SSH, email, and P2P. The name “TOR” was originally used as an acronym for what was called the “The Onion Routing” project in direct reference to the technology on which it is based. It has now become more common to capitalize only the first letter – “Tor” – which is also how the developers refer to it. The concept and development of the technology date back to the year 2000. In the early years, the project was largely driven and developed by U.S. government agencies, initially by the United States Naval Research Laboratory with the support of the Office of Naval Research (ONR) and the Defense Advanced Research Projects Agency (DARPA). The Electronic Frontier Foundation (EFF) also participated in the development of Tor. Since 2006, the non-profit organization The Tor Project, Inc. has been responsible for the open source project.
+            </p>
+            <br>
+            <br>
+            <h2 class="subfields_style">How does the Tor network work?</h2>
+            <p>
+              Onion routing forms the technological basis of the Tor network. Its name comes from the structure of the encryption scheme used, which is secured several times over many layers. The connection is routed through a network of nodes that act as encrypting proxy servers. This gives the sent data packets multi-layer encryption corresponding to the number of nodes through which the route passes. Typically, a route has three instances, as this strikes a balance between anonymity and speed. Decryption of the received data packets follows the same pattern.
+
+Onion routing ensures that only the last node on the route receives the request in plain text, but it cannot be assigned to a user. Even within the route, it should not be possible to track the user – provided that not all the nodes used belong to a single operator. Since the route is always assigned individually and variably, such a scenario is very unlikely, especially since a new route is defined every ten minutes by the Tor network.
+            </p>
+            <br>
+            <br>
+            <h2 class="subfields_style">How onion routing works</h2>
+            <p>
+              In principle, accessing web content via the Tor network includes at least the following stations:
+
+Tor client:
+The user sends a request via the client software on the PC or mobile device to a web service (for example, a search on Google.com). This request is encrypted by the Tor client and forwarded to one of the predefined entry points.
+Entry point:
+The entry point into the Tor network, also called the “entry guard” or “guard,” receives an encrypted access request from the Tor client that it redirects to a relay node. The content of the request is not visible to the guard, which is only aware of the origin (Tor client) and the subsequent Tor node for relaying the request. Unlike the remaining nodes within a connection, guards are not selected dynamically. Instead, the client determines a small number (three by default) of predefined guards, which are used for all the sessions and only re-selected after two to three months or in the event of a failure. These entry points are servers that have been in operation reliably for a long time and can handle high transmission loads. The intention of this principle is to increase the stability and security of the routes as using fixed entry servers reduces the likelihood that Tor users will use a route completely controlled by an attacker.
+
+Tor node:
+The Tor node now accepts the incoming request and transfers it to the end node or exit point. Even traditional Tor nodes do not have access to the cleartext of the requests. Only the instances before and after the node are communicated.
+Exit node:
+The exit node now actually accesses the addressed web server. This is where the request is decrypted and forwarded to the respective target server via a DNS request.
+Target server:
+The target server is now aware of the request and the IP address of the exit node. It transfers the requested web content to the exit node. The actual origin of the request, meanwhile, remains unknown. The server’s response now follows the same route the request took previously.
+            </p>
+            <br>
+            <br>
+            <h2 class="subfields_style">Special case of Tor bridges</h2>
+            <p>
+              Since the list of all Tor nodes is publicly available, it is particularly easy for authoritarian governments to censor access to the anonymization network. To work around this problem, the Tor network also includes unregistered nodes called bridges. The user must explicitly request these relays from the Tor project, which are then stored in the client. The traffic from the client to the bridge instance can also be obscured by using pluggable transports to bypass deep packet inspection (DPI) from the internet service provider.
+            </p>
+
+            <br>
+            <br>
+            <h2 class="subfields_style">What are onion services?</h2>
+            <p>
+              Onion services refer to web content intended specifically for the use by the Tor network. These web services use the Top Level Domain (TLD) .onion and are not indexed by search providers such as Google. The user must know the exact address of the service in order to access it directly. Unlike traditional websites, access to onion services is completely encrypted via the Tor Browser. In this case, there is no cleartext request from the exit node with the resulting metadata to the target server. This means that the user’s identity is better protected when browsing onion services compared to traditional websites. For this reason, various news portals, organizations for human rights, freedom of speech and the press, as well as service providers and email providers concerned with data protection, use their own onion services as a supplement to their traditional websites. The most well-known examples of this include The New York Times, BBC News, The Intercept, ProtonMail, Mailbox.org, and DuckDuckGo. Tor browser users are automatically directed to an onion service when a website provides it.
+            </p>
+      
+            <br>
+            <br>
+            <h2 class="subfields_style">What does the darknet have to do with Tor?</h2>
+            <p>
+              The special security and anonymity of the Tor network also attract cybercriminals who abuse the technology for illegal activities. For example, the darknet is used to operate illegal marketplaces where malware, drugs, weapons, and criminal services are traded. The term darknet alludes to the fact that these websites are not accessible via conventional search engines and normal web browsers. Instead, users need to use special software and know the exact address. Moreover, many of these shadow portals require an invitation from members to join the services at all, which is how cybercriminals try to prevent infiltration by investigative authorities. Nevertheless, law enforcement officers repeatedly succeed in unearthing even such well-secured portals on the darknet. Most recently, DarkMarket, the world’s largest illegal marketplace on the darknet, was taken offline the web by German investigators with international support. Around 500,000 users are said to have made transactions worth more than €140 million on the portal.
+            </p>
+
+
+            <br>
+            <br>
+            <h2 class="subfields_style">Which programs use the Tor network?</h2>
+            <p>
+              Special Tor clients are required to use the Tor network to access web content and special onion services. There is a wide variety of these clients available for the most common operating systems.
+
+              Tor Browser:
+              The most well-known client is the Tor Browser developed by the Tor project itself. This software is based on the stable ESR version of Mozilla Firefox with the NoScript and HTTPS Everywhere add-ons as well as Tor-specific control and configuration elements. This client is available for Windows, macOS, Linux, and Android.
+              
+              Onion Browser:
+              This mobile browser for Apple iOS is also designed as open source. In contrast to the Tor Browser, this software uses WebKit rather than Mozilla’s Gecko engine due to the platform.
+            </p>
+      
+
+
+
+            
+
+            <br>
+            <br>
+            <h2 class="subfields_style">How secure is the Tor network?</h2>
+            <p>
+              The Tor network is a powerful tool for concealing internet activity. However, Tor is not free of vulnerabilities and errors. For example, there is always a risk that attackers will control and monitor a variety of nodes. If a route’s entry point and exit node are under the control of a single player, it is possible to determine the user’s identity.
+
+              Vulnerabilities in the Tor Browser itself, as well as in the NoScript and HTTPS Everywhere extensions that have been implemented, can never be completely ruled out. In the past, security researchers have successfully smuggled malicious code into the Tor Browser via bugs in the extensions.
+              
+              Moreover, anonymity in the Tor network can, of course, only be ensured if users do not leave any traces in the form of cookies, additional add-ons, or the use of BitTorrent services that reveal their identity.
+            </p>
+      
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <br>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+          
+          <div class="short_intro">
+            <!-- <h3>WELCOME THE WORLD OF CYBER-SECURITY</h3> -->
+            <br>
+            <!-- <h4>This blog is for those people who are interested in this filed
+              and want to learn about <br>information technology and security
+              you will learn the basics and the advance topics here
+            </h4> -->
+            <div class="container">
+              <div class="title">
+                  <h5>BLOG POST</h5>
+                  <h1>Trending Posts</h1>
+              </div>
+              <div class="column-card">
+                <div class="card">
+                  <div class="inner">
+                  <a href="blog_layout.html"><img src="htb.jpg"/></a>
+                </div>
+                  <div class="panel">
+                    <span class="date">26th</span>
+                    <p>
+                      <h3>WEB BASICS</h3><br>
+                      A detail information Web Basics, how they work, how they are designed and how are they performed server-side
+                    </p>
+                    <span class="breaker"></span>
+                    <h5><br>
+                      WEB Application
+                    </h5>
+                    <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="inner">
+                  <img class="how" src="htb1.jpg"/></div>
+                  <div class="panel">
+                    <span class="date">26th</span>
+                    <p>
+                      <h3>NETWORKING BASICS</h3><br>
+                      The Art of connecting every-device
+                    </p>
+                    <span class="breaker"></span>
+                    <h4>
+                      NETWORKING
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    </h4>
+                    <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="inner">
+                  <img class="how"  src="htb2.jpg"/></div>
+                  <div class="panel">
+                    <span class="date">26th</span>
+                    <p>
+                      <h3>LINUX BASICS</h3><br>
+                      Linux is Essential for all the programmers and hackers
+                    </p>
+                    <span class="breaker"></span>
+                    <h3>
+                      LINUX FUNDAMENTALS
+                      <br>
+                      <br>
+                      
+                    </h3>
+                    <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+                  </div>
+                </div>
+           
+
+
+
+        </body>
+        </html>
+        
