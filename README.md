@@ -1,9 +1,4 @@
-# A-Cursed-Static-Blog
-It's a cursed blog that I made for a competition that I'm not going to win because i just entered the competition for fun and not for learning anything and wasted my time
-; and i wont recommend you to use it and this blog was just made in under 1 week so you better not judege my skills : ) 
-when making this project i was adding random things and didnt focused at all , i just made this blog for fun (you can say that if you will tell me to make a blog under 4 days
-this is the blog that i would make : ) ) 
-thanks : )
+
 
 ![30 03 2022_23 21 12_REC](https://user-images.githubusercontent.com/97381867/161423528-4ef09b35-946b-49da-a8a8-82da924f815d.png)
 ![30 03 2022_23 21 32_REC](https://user-images.githubusercontent.com/97381867/161423628-a4197e35-a0ff-499c-b73f-3c216cb858b3.png)
